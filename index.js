@@ -6,14 +6,14 @@ require('dotenv').config({ silent: true });
 
 const app = express();
 
-const chatkit = new Chatkit.default(require({
+const chatkit = new Chatkit.default({
 	instanceLocator: process.env.PUSHER_CHATKIT_INSTANCE_LOCATOR,
 	key: process.env.PUSHER_CHATKIT_KEY
-}))
+})
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.json(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, 'assets')));
 
 app.post('/session/auth', (req, res) => {
 	res.json(chatkit.authenticate(req.body, req.query.user_id))
@@ -77,3 +77,5 @@ app.post('/session/load', (req, res, next) => {
 app.get('/', (req, res) => {
 	res.sendFile('index.html', {root: __dirname + '/views'})
 })
+
+app.listen(3000, () => console.log("Application listening on port 3000!!!"))
