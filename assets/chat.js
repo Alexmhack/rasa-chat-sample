@@ -1,9 +1,7 @@
-require('dotenv').config({ silent:true })
-
 (function() {
     'use strict';
 
-    const PUSHER_INSTANCE_LOCATOR = process.env.PUSHER_CHATKIT_INSTANCE_LOCATOR
+    const PUSHER_INSTANCE_LOCATOR = "v1:us1:5167b807-d650-45b8-af6e-508896d8c5dc"
 
     // ----------------------------------------------------
     // Chat Details
