@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Alexmhack/rasa-chat-sample#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "pusher-chatkit-server": "^0.12.0"
   }
