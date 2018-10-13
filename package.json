@@ -1,0 +1,24 @@
+{
+  "name": "rasa-chat-sample",
+  "version": "1.0.0",
+  "description": "using chatkit to chat with customers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexmhack/rasa-chat-sample.git"
+  },
+  "author": "alexmhack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexmhack/rasa-chat-sample/issues"
+  },
+  "homepage": "https://github.com/Alexmhack/rasa-chat-sample#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pusher-chatkit-server": "^0.12.0"
+  }
+}
